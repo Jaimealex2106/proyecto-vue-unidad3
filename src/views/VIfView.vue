@@ -9,13 +9,13 @@
       
       <div class="status-card">
         <div v-if="stock > 50" class="alert alert-success">
-          <strong>🟢 Stock Óptimo:</strong> Hay suficientes unidades disponibles para la venta.
+          <strong>Stock Óptimo:</strong> Hay suficientes unidades disponibles para la venta.
         </div>
         <div v-else-if="stock > 0 && stock <= 50" class="alert alert-warning">
-          <strong>🟡 Alerta de Stock Bajo:</strong> Es necesario solicitar reabastecimiento pronto.
+          <strong> Alerta de Stock Bajo:</strong> Es necesario solicitar reabastecimiento pronto.
         </div>
         <div v-else class="alert alert-danger">
-          <strong>🔴 Agotado:</strong> Producto no disponible para venta inmediata.
+          <strong> Agotado:</strong> Producto no disponible para venta inmediata.
         </div>
       </div>
     </div>
